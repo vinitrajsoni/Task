@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+        .outer-container {
+            background-color: rgb(184, 14, 99);
+            margin: 100px;
+            padding: 50px;
+            width: 500px;
+        }
+
+        .inner-container{
+            background-color: rgb(142, 6, 74);
+            padding: 20px;
+            color: white;
+        }
+
+        .registerbutton{
+            margin: 10px;
+            width: 250px;
+            height: 30px;
+        }
+        tr,td{
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <table>
+                <tr>
+                    <td><label for="Name">Name: </label></td>
+                    <td><input type="text" name="Name" placeholder="your name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="text" name="email" placeholder="your email"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phoneno">Phone number: </label></td>
+                    <td><input type="number" name="number"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">Gender: </label></td>
+                    <td><label for="male">Male:</label>
+                        <input type="radio" name="gender" value="Male">
+                        <label for="gender">Female:</label>
+                        <input type="radio" name="gender" value="Female">
+                        <label for="gender">other:</label>
+                        <input type="radio" name="gender" value="other">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="language">Language: </label></td>
+                    <td><select name="gender" id="gender">
+                            <option value="select">Select Language</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="english">English</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><label for="zipcode">Zip Code: </label></td>
+                    <td><input type="number" name="zipcode"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="about">About: </label></td>
+                    <td><input class="aboutbox" type="text" name="about" placeholder="Write about Yourself..."></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input class="registerbutton" type="submit" value="Register" name="Submit"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
